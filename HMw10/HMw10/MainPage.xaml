@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="HMw10.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HMw10"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <SplitView x:Name="MySplitView" DisplayMode="CompactOverlay" IsPaneOpen="False" CompactPaneLength="50" OpenPaneLength="150">
+        <SplitView.Pane>
+
+            <StackPanel Background="Gray">
+
+                <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;"
+
+                    Width="50" Height="50" Background="Transparent" Click="HamburgerButton_Click"/>
+
+               
+
+                <StackPanel Orientation="Horizontal">
+
+                    <Button x:Name="HomeMenuButton" FontFamily="Segoe MDL2 Assets" Content="&#xE10F;"
+
+                        Width="50" Height="50" Background="Transparent" Click="HomeMenuButton_Click"/>
+
+                    <TextBlock Text="Brian593" FontSize="18" VerticalAlignment="Center" />
+
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+
+                    <Button x:Name="cameraMenuButton" FontFamily="Segoe MDL2 Assets" Content="&#xe114;"
+
+                        Width="50" Height="50" Background="Transparent" Click="cameraMenuButton_Click"/>
+
+                    <TextBlock Text="Foto" FontSize="18" VerticalAlignment="Center" />
+
+                </StackPanel>
+
+            </StackPanel>
+
+        </SplitView.Pane>
+        <SplitView.Content>
+            <Grid>
+                <WebView x:Name="MiWeb" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
+
+
+            </Grid>
+        </SplitView.Content>
+    </SplitView>
+
+
+</Page>
